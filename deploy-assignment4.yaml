@@ -20,7 +20,7 @@ spec:
           image: assignment4
           imagePullPolicy: Never
           ports:
-            - containerPort: 8383
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -33,6 +33,6 @@ spec:
     app: assignment4
   ports:
     - name: http
-      port: 8383
-      targetPort: 8383
+      port: 8080
+      targetPort: 8080
   #type: NodePort type of service
